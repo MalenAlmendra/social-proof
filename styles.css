@@ -1,0 +1,103 @@
+:root {
+  --color-dark-magenta: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  color: var(--color-dark-magenta);
+  background-color: var(--color-white);
+}
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+body {
+  margin: 8.4rem 11.05rem 6.67rem 11.05rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.r1-col1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.r2-col1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.love-product {
+  grid-column: span 2;
+  max-width: 450px;
+}
+.rated {
+  grid-column: 3 / span 3;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 700px;
+}
+.rated-start,
+.rated-center,
+.rated-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rated-start {
+  grid-column: span 5;
+}
+.rated-center {
+  grid-column: 2 / span 5;
+  grid-row: 2 / span;
+}
+.rated-end {
+  grid-column: 3 / span 5;
+  grid-row: 3 / span;
+}
+.rated-item {
+  background-color: var(--color-light-grayish-magenta);
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.card {
+  margin-top: 5em;
+  background-color: var(--color-dark-magenta);
+  color: var(--color-white);
+  padding: 3em;
+  border-radius: 10px;
+  max-height: 234px;
+  max-width: 350px;
+}
+
+.image-colton,
+.image-irene,
+.image-anne {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 1em;
+}
+.image-colton {
+  background-image: url("./images/image-colton.jpg");
+}
+.image-irene {
+  background-image: url("./images/image-irene.jpg");
+}
+.image-anne {
+  background-image: url("./images/image-anne.jpg");
+}
+.header-card {
+  display: flex;
+}
+.header-card p {
+  line-height: 50%;
+}
+.title {
+  font-weight: 700;
+}
+.subtitle {
+  color: var(--color-soft-pink);
+}
